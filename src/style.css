@@ -1,0 +1,335 @@
+@font-face {
+    font-family: neon;
+    src: url("Roboto-Regular.ttf");
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  /* html,body{ */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-image:url('./im2.jpeg'); */
+    /* background-size: cover; */
+    /* background-position:  center; */
+    /* background-repeat: no-repeat; */
+      /* overflow-y: scroll; */
+      /* font-family: neon; */
+  /* } */
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-image: url("./im3.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat:  no-repeat;
+    font-family: neon;
+  }
+  
+  @media screen and (min-width:320px) and (max-width:500px){
+    html,
+  body {
+    background-image: url("./mobile.jpg");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    background-repeat:  no-repeat;
+    font-family: neon;
+  }
+  
+  }
+  
+  .top_img{
+    position: fixed;
+    bottom: 0px;
+    height: 50%;
+
+  }
+  
+  .img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .homebox{
+    width: 50%;
+    margin: 10% auto;
+    text-align: center;
+    /* float: right; */
+    height: fit-content;
+    z-index: 100;
+  }
+  
+  .heading{
+    margin:20px auto;
+    font-size: 40px;
+    color: #fff;
+    width: 75%;
+    letter-spacing: 2px;
+  }
+  .innerbox{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .login,.register{
+    padding: 10px;
+    background-color:transparent;
+    border-radius: 20px;
+    border:2px solid #fff;
+    font-size:20px;
+    color: #fff;
+    margin:10px;
+    width: 50% !important;
+    text-decoration: none;
+  } 
+  .dashboard{
+    padding:10px;
+    border-radius: 20px;
+    width: 100%;
+    background-color:transparent;
+    border:2px solid #fff;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+  } 
+  
+  .login:hover,.register:hover,.dashboard:hover{
+    background-color: #fff;
+    color:black;
+  }
+  
+  
+  @media screen and (min-width:320px) and (max-width:767px){
+    .homebox{
+      width: 80%;
+    }
+  
+  }
+  
+  @media screen and (min-width:320px) and (max-width:390px){
+  
+    .dashboard{
+      width: 85%;
+    }
+
+    .innerbox{
+      margin:10px auto;
+    }
+    .homebox{
+      width: 90%;
+    }
+  
+  }
+
+
+  
+  
+  
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(105,29,57);
+    overflow-x: hidden;
+    /* transition: 0.5s; */
+    padding-top: 60px;
+  }
+  .increasesidenav{
+    width: 250px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    color:#fff;
+    /* margin:5px; */
+  }
+  
+  .sidenav span{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    /* display: block; */
+    transition: 0.3s;
+    color:#fff;
+    /* margin:5px; */
+  
+  }
+  
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  
+  .sidenav .logout{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    color:#fff;
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+  
+  }
+  .sidenav .mmil{
+    text-align: center;
+    position:absolute;
+    bottom: 40px;
+    color:#fff;
+    width: 250px;
+  
+  }
+  
+  .sidenav p{
+    text-align: center;
+    color: #fff;
+    font-size:25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin:10px 0;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  
+  /* The switch - the box around the slider */
+  .switch {
+    padding: 8px 8px 8px 32px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 26px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 26px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  
+  a:focus{
+    background-color: transparent;
+    color:#000;
+  }
+
+
+  @media screen and (min-width:320px) and (max-width:600px){
+    .opener{
+      position: relative;
+      top:15px;
+      /* left: -50px !important; */
+      text-align: left !important;
+    }
+    }
+    
+    
+    @media screen and (min-width:601px){
+      .opener{
+        position: relative;
+        top:20px;
+        left: 20px !important;
+      }
+      }
+    
+    
+  
+  /* .qrcode-text-btn {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background: url(qr.png) 50% 50% no-repeat;
+    cursor: pointer;
+  }
+  
+  .qrcode-text-btn > input[type=file] {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  } */

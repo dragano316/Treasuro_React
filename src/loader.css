@@ -1,0 +1,44 @@
+.loader-wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color:  rgb(251, 251, 251);
+  background-image: url('loader1.gif');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+ position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  overflow: none;
+  visibility: hidden;
+}
+
+  @media screen and (min-width:320px) and (max-width:800px){
+  .loader-wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color:  rgb(251, 251, 251);
+    background-image: url('loader1.gif');
+    background-size: 220%;
+    background-position: center;
+    background-repeat: no-repeat;
+   position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    overflow: none;
+    visibility: hidden;
+} 
+  }
+
+
+  .displaynone{
+    visibility: hidden;
+  }
